@@ -1,0 +1,48 @@
+.repo-form {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+
+  &-field,
+  &-btn {
+    flex-grow: 1;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  &-field {
+    border-bottom: 1px solid grey;
+    background: rgba(128, 128, 128, 0.12);
+  }
+
+  &-btn {
+    background: #737782;
+    color: #fff;
+    cursor: pointer;
+
+    @media screen and (min-width: 639px) {
+      flex-grow: initial;
+      width: 200px;
+    }
+  }
+
+  @media screen and (min-width: 639px) {
+    flex-direction: row;
+  }
+
+  &-error {
+    flex-basis: 100%;
+    position: absolute;
+    top: 40px;
+    padding: 5px;
+    width: calc(100% - 20px);
+    background: red;
+    color: #fff;
+    border-radius: 5px;
+  }
+}

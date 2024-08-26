@@ -1,0 +1,9 @@
+.task-container {
+    display: flex;
+    height: max-content;
+
+    &-column {
+        width: calc(100% / 3);
+        height: 100%;
+    }
+}
